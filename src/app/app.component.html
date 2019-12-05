@@ -1,0 +1,27 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a routerLink="home">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Products <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="products/add-product">Add-Product</a></li>
+          <li><a routerLink="products/product-group">Product-group</a></li>
+        </ul>  
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Users <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="users/add-user">Add-User</a></li>
+            <li><a routerLink="users/add-user-role">Add-user-role</a></li>
+          </ul>  
+        </li>
+      <li><a routerLink="settings">Settings</a></li>
+      <!-- <li><a routerLink="**">PageNotFound</a></li> -->
+    </ul>
+  </div>
+</nav>
+
+<!-- <router-outlet></router-outlet> -->
+<app-user></app-user>
